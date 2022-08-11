@@ -15,5 +15,6 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
-
+    - name: Training dev
+      run: az ml job create -f ./job.yml --workspace-name "amlbughunto" --resource-group "RG-AMLBugHuntO" --subscription "a32bec21-3d0b-43f4-a7db-6c56a6fe1302"
 
