@@ -1,6 +1,20 @@
+import pytest
+
+import argparse
+import glob
+import os
+
+import pandas as pd
+
+# to add autolog feature
+import mlflow
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+
 from model.train import get_csvs_df
 import os
-import pytest
 
 
 def test_csvs_no_files():
