@@ -1,8 +1,0 @@
-- name: Pull Request
-
-on:
-  push:
-    branches:
-      - main
-
-      
