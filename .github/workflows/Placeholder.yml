@@ -1,7 +1,4 @@
 - name: Placeholder
 
-on:
-  workflow_dispatch:
-
   run: |
     echo "Will add code checks here in next challenge"
